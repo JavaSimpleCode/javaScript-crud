@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <style type="text/css">
+    .navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+    position: relative;
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Project 1</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="add.html">Add</a></li>
+            <li><a href="edit.html">Edit</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container">
+      <form>
+          <div class="form-group">
+            <label for="task">Task</label>
+            <input type="text" class="form-control" id="task" placeholder="Task">
+          </div>
+          <div class="form-group">
+            <label for="task-piority">Priority</label>
+            <select class="form-control" id="task-priority">
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
+          </div>
+         <div class="form-group">
+           <label for="task-Priority">Task Date</label>
+            <input type="date" id="task-date" class="form-control">
+         </div>
+          <div class="form-group">
+           <label for="task-Priority">Task Time</label>
+            <input type="time" id="task-time" class="form-control">
+         </div>
+          <button type="submit" class="btn btn-default" id="add" >Submit</button>
+      </form>
+    </div>
+    <script type="text/javascript" src="js/add.js"></script>
+</body>
+</html>
